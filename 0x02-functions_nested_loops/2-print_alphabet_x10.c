@@ -1,32 +1,24 @@
-#include <stdio.h>
+#include <unistd.h>
+#include "main.h"
 /**
- * main - entry point
- *
- * description - program that prints the alphabet 10 times
- *
- * Return: 0 (success)
- *
- * print_alphabet_x10 - runs the alphabet in lowercase repetitively for 10 times
+ * print_alphabet_x10 - Prints the alphabet in lowercase ten times, followed by a new line
  */
-
 void print_alphabet_x10(void)
 {
-	int i;
-	char letter;
+    char letter = 'a';
+    int i = 0;
 
-	i = 0;
-	while (i < 10)
-	{
-		letter = 'a';
-		while (letter <= 'z');
-		putchar(letter);
-		letter++;
-	}
-	putchar('\n');
+    while (i < 10)
+    {
+        while (letter <= 'z')
+        {
+            _putchar(letter);
+            letter++;
+        }
+
+        letter = 'a'; /* reset letter to 'a' for next iteration */
+        _putchar('\n');
+        i++;
+    }
 }
 
-int main(void)
-{
-	print_alphabet_x10();
-	return (0);
-}
