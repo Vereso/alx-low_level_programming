@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stddef.h>
 
+void set_string(char **s, char *to);
 void print_diagsums(int *a, int size);
 int _putchar(char c);
 void print_chessboard(char (*a)[8]);
