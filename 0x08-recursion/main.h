@@ -2,6 +2,9 @@
 #define MAIN_H
 #include <stdio.h>
 
+int _strlen(char *s);
+int is_palindrome_helper(char *s, int start, int end);
+int is_palindrome(char *s);
 int is_prime_helper(int n, int i);
 int is_prime_number(int n);
 int _sqrt_helper(int n, int start, int end);
