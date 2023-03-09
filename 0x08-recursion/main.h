@@ -2,6 +2,7 @@
 #define MAIN_H
 #include <stdio.h>
 
+int wildcmp(char *s1, char *s2);
 int _strlen(char *s);
 int is_palindrome_helper(char *s, int start, int end);
 int is_palindrome(char *s);
