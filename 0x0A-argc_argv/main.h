@@ -3,4 +3,5 @@
 
 #include <stdio.h>
 
+int isdigit(char c);
 #endif
